@@ -1,9 +1,78 @@
+<!DOCTYPE html>
 <html>
-
-<body>
-  <h1>Goobearal</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
-
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <h1>CSS Selectors and Specificity</h1>
+  </head>
+  <body>
+    <div>
+      <p>
+        CSS (cascading style sheet) is how simple and plain html code is transformed into an appealing and attractive site. However, within CSS, it is important to understand the different selectors available to the programmer as well as their specificity in order to have a fluid coding experience.
+      </p>
+    </div>
+    <div>
+      <table>
+        <caption>Some common CSS selectors:</caption>
+        <thead>
+          <tr>
+            <th scope="col">CSS Selectors</th>
+            <th scope="col">What it is</th>
+            <th scope="col">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">* {}</th>
+            <td>This, a <span class="weightBold">universal selector</span>, allows the CSS code and styling to apply to all of the basic html elements, which includes "p", "span", and "div" elements.</td>
+            <td>
+              <img src="https://i.sstatic.net/rUawd.png" width="100" />
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">p {} <span class="normalWeight">or</span> h1 {}</th>
+            <td>This, a <span class="weightBold">type selector</span>, applies the CSS styling to  elements in the html file. While "*" applies to all the elements, having just the type name will limit the styling to that element.</td>
+            <td>
+              <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/selector.png" width="100" />
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">.class</th>
+            <td>This, a <span class="weightBold">class selector</span>, applies CSS styles to html elements with a specific class. This allows different html elements to be styled in the same way in one fell swoop.</td>
+            <td>
+              <img src="https://codewala.net/wp-content/uploads/2016/04/class-selector.png?w=869" width="100" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <table>
+        <caption>CSS specificity:</caption>
+        <thead>
+          <tr>
+            <th scope="col">CSS Selector Types</th>
+            <th scope="col">What it means</th>
+            <th scope="col">Specificity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">n {}</th>
+            <td><span class="weightBold">Type selectors</span> are the least specific CSS selector, with the universal selector being least specific.</td>
+            <td>Both class and ID selector CSS styling will be applied over CSS styling by type selectors, since both are more specific.</td>
+          </tr>
+          <tr>
+            <th scope="row">.n</th>
+            <td><span class="weightBold">Class selectors</span> are a bit more specific than type selectors. These address certain classes, which allows the programmer to selectively style html elements.</td>
+            <td>This is more specific than type selectors, but less specific than ID selectors. So its CSS stling will be applied instead of styling done with type selectors, but not over styling done with ID selectors.</td>
+          </tr>
+          <tr>
+            <th scope="row">#n</th>
+            <td><span class="weightBold">ID selectors</span> are the most specific of these three CSS selectors. IDs are specific to only one html element, so unlike a class, it won't be applied to multiple html elements if the programmer wants it to.</td>
+            <td>This is the most specific, and therefore the CSS styling in this selector takes priority over the other two selectors.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
 </html>
