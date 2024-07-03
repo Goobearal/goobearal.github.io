@@ -1,0 +1,40 @@
+.monospace {
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+table {
+  border: 2px solid;
+  border-color: #000;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+caption {
+  font-size: 1.17em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+thead {
+  font-weight: bold;
+  font-size: 1.25em;
+  background-color: lightgray;
+}
+
+th, td {
+  border: 1px solid;
+  border-color: lightgray;
+  padding: 8px 10px;
+}
+
+.normalWeight {
+  font-weight: normal;
+}
+
+.weightBold {
+  font-weight: bold;
+}
