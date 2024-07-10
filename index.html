@@ -1,78 +1,84 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <h1>CSS Selectors and Specificity</h1>
+    <title>The Tea Cozy</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
+  <header>
+    <img id="logo" src="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-logo.png?_gl=1*tawd6n*_gcl_au*MTI0NzE5NzY4OC4xNzE5OTE5Njg4*_ga*NzQ2ODk1MjY5My4xNzA4MjgzMjA5*_ga_3LRZM6TM9L*MTcyMDYxNDYxOS4yNy4xLjE3MjA2MTkxODYuNTguMC4w">
+    <div id="headerLinks">
+      <ul>
+        <li>Mission</li>
+        <li>Featured Tea</li>
+        <li>Locations</li>
+      </ul>
+    </div>
+  </header>
   <body>
-    <div>
-      <p>
-        CSS (cascading style sheet) is how simple and plain html code is transformed into an appealing and attractive site. However, within CSS, it is important to understand the different selectors available to the programmer as well as their specificity in order to have a fluid coding experience.
-      </p>
+    <div class="mission">
+      <div id="missionText">
+        <h2>Our Mission</h2>
+        <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+      </div>
     </div>
-    <div>
-      <table>
-        <caption>Some common CSS selectors:</caption>
-        <thead>
-          <tr>
-            <th scope="col">CSS Selectors</th>
-            <th scope="col">What it is</th>
-            <th scope="col">Example</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">* {}</th>
-            <td>This, a <span class="weightBold">universal selector</span>, allows the CSS code and styling to apply to all of the basic html elements, which includes "p", "span", and "div" elements.</td>
-            <td>
-              <img src="https://i.sstatic.net/rUawd.png" width="100" />
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">p {} <span class="normalWeight">or</span> h1 {}</th>
-            <td>This, a <span class="weightBold">type selector</span>, applies the CSS styling to  elements in the html file. While "*" applies to all the elements, having just the type name will limit the styling to that element.</td>
-            <td>
-              <img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/selector.png" width="100" />
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">.class</th>
-            <td>This, a <span class="weightBold">class selector</span>, applies CSS styles to html elements with a specific class. This allows different html elements to be styled in the same way in one fell swoop.</td>
-            <td>
-              <img src="https://codewala.net/wp-content/uploads/2016/04/class-selector.png?w=869" width="100" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="teaOfTheMonth">
+      <div class="monthText">
+        <h2>Tea of the Month</h2>
+        <h3>What's Sleeping at The Tea Cozy?</h3>
+      </div>
+      <div class="images">
+        <div class="container">
+          <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-berryblitz.jpg?_gl=1*1llw1wu*_gcl_au*MTI0NzE5NzY4OC4xNzE5OTE5Njg4*_ga*NzQ2ODk1MjY5My4xNzA4MjgzMjA5*_ga_3LRZM6TM9L*MTcyMDYxNDYxOS4yNy4xLjE3MjA2MTkxODYuNTguMC4w">
+          <h3>Fall Berry Blitz Tea</h3>
+        </div>
+        <div class="container">
+          <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-spiced-rum.jpg?_gl=1*1llw1wu*_gcl_au*MTI0NzE5NzY4OC4xNzE5OTE5Njg4*_ga*NzQ2ODk1MjY5My4xNzA4MjgzMjA5*_ga_3LRZM6TM9L*MTcyMDYxNDYxOS4yNy4xLjE3MjA2MTkxODYuNTguMC4w">
+          <h3>Spiced Rum Tea</h3>
+        </div>
+        <div class="container">
+          <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-donut.jpg?_gl=1*t1sdhb*_gcl_au*MTI0NzE5NzY4OC4xNzE5OTE5Njg4*_ga*NzQ2ODk1MjY5My4xNzA4MjgzMjA5*_ga_3LRZM6TM9L*MTcyMDYxNDYxOS4yNy4xLjE3MjA2MTkxODYuNTguMC4w">
+          <h3>Seasonal Donuts</h3>
+        </div>
+        <div class="container">
+          <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-myrtle-ave.jpg?_gl=1*t1sdhb*_gcl_au*MTI0NzE5NzY4OC4xNzE5OTE5Njg4*_ga*NzQ2ODk1MjY5My4xNzA4MjgzMjA5*_ga_3LRZM6TM9L*MTcyMDYxNDYxOS4yNy4xLjE3MjA2MTkxODYuNTguMC4w">
+          <h3>Myrtle Ave Tea</h3>
+        </div>
+        <div class="container">
+          <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-bedford-bizarre.jpg?_gl=1*2v9ui8*_gcl_au*MTI0NzE5NzY4OC4xNzE5OTE5Njg4*_ga*NzQ2ODk1MjY5My4xNzA4MjgzMjA5*_ga_3LRZM6TM9L*MTcyMDYxNDYxOS4yNy4xLjE3MjA2MTkxODYuNTguMC4w">
+          <h3>Bedford Bizarre Tea</h3>
+        </div>
+      </div>
     </div>
-    <div>
-      <table>
-        <caption>CSS specificity:</caption>
-        <thead>
-          <tr>
-            <th scope="col">CSS Selector Types</th>
-            <th scope="col">What it means</th>
-            <th scope="col">Specificity</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">n {}</th>
-            <td><span class="weightBold">Type selectors</span> are the least specific CSS selector, with the universal selector being least specific.</td>
-            <td>Both class and ID selector CSS styling will be applied over CSS styling by type selectors, since both are more specific.</td>
-          </tr>
-          <tr>
-            <th scope="row">.n</th>
-            <td><span class="weightBold">Class selectors</span> are a bit more specific than type selectors. These address certain classes, which allows the programmer to selectively style html elements.</td>
-            <td>This is more specific than type selectors, but less specific than ID selectors. So its CSS stling will be applied instead of styling done with type selectors, but not over styling done with ID selectors.</td>
-          </tr>
-          <tr>
-            <th scope="row">#n</th>
-            <td><span class="weightBold">ID selectors</span> are the most specific of these three CSS selectors. IDs are specific to only one html element, so unlike a class, it won't be applied to multiple html elements if the programmer wants it to.</td>
-            <td>This is the most specific, and therefore the CSS styling in this selector takes priority over the other two selectors.</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="locations">
+      <h2 id="locationsText">Locations</h2>
+      <div class="locationBoxes">
+        <div class="locationContainer">
+          <h3>Downtown</h3>
+          <h4>284 West 4th St</h4>
+          <h4>Suite 108</h4>
+          <h4>Portland, Maine</h4>
+        </div>
+        <div class="locationContainer">
+          <h3>East Bayside</h3>
+          <h4>3433 Phisherman's Avenure</h4>
+          <h4>(Northwest Corner)</h4>
+          <h4>Portland, Maine</h4>
+        </div>
+        <div class="locationContainer">
+          <h3>Oakdale</h3>
+          <h4>515 Crescent Avenue</h4>
+          <h4>Second Floor</h4>
+          <h4>Portland, Maine</h4>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <h2>The Tea Cozy</h2>
+      <h5>contact@theteacozy.com</h5>
+      <h5>917-555-8904</h5>
     </div>
   </body>
+  <footer>
+    <h4>copyright The Tea Cozy 2017</h4>
+  </footer>
 </html>
